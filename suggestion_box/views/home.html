@@ -5,11 +5,9 @@
         <h2>{{ post.title }}</h2>
         <p>
             <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(post)"></span>
-            Upvotes: {{post.upvotes}}
+            Голосов: {{post.upvotes}}
         </p>
-        <div ng-repeat="comment in post.comments">
-            <p>{{ comment }}</p>
-        </div>
+        <a href="#/suggestion/{{$index}}">Комментарии</a>
     </div>
 
     <form ng-submit="addSuggestion()" style="margin-top: 50px" class="col-xs-5">
