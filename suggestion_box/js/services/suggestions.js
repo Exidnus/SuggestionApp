@@ -10,10 +10,10 @@ app.factory('suggestions', [function() {
                 title: 'Бесплатная пицца на клубных собраниях',
                 upvotes: 15,
                 comments: [{
-                    title: 'Круто',
+                    body: 'Круто',
                     upvotes: 3
                 }, {
-                    title: 'Просто офигенно!',
+                    body: 'Просто офигенно!',
                     upvotes: 2
                 }]
             },
@@ -21,10 +21,10 @@ app.factory('suggestions', [function() {
                 title: 'Очистить воду в фонтане',
                 upvotes: 7,
                 comments: [{
-                    title: 'Не может быть!',
+                    body: 'Не может быть!',
                     upvotes: 4
                 }, {
-                    title: 'Невероятно',
+                    body: 'Невероятно',
                     upvotes: 10
                 }]
             },
