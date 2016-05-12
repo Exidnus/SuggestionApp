@@ -1,14 +1,15 @@
-<div ng-repeat="comment in post.comments">
+<div ng-repeat="comment in post.comments" class="col-xs-4 col-xs-offset-4">
     <h3>{{ comment.body }}</h3>
     <p>
         <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)"></span>
         Голосов: {{ comment.upvotes }}
     </p>
 </div>
-<form ng-submit="addComment()" style="margin-top: 50px" class="col-xs-5">
+<form ng-submit="addComment()" style="margin-top: 50px" class="col-xs-4 col-xs-offset-4">
     <h3>Добавить комментарий</h3>
     <div class="form-group">
         <input type="text" class="form-control" placeholder="Добавляйте комментарий сюда!" ng-model="body"/>
     </div>
     <button type="submit" class="btn btn-primary">Добавить</button>
 </form>
+<a href="#/" style="margin-top: 25px" class="col-xs-4 col-xs-offset-4">Назад</a>
